@@ -15,7 +15,7 @@ app = FastAPI(title="YouTube Notes API")
 # CORS middleware to allow Chrome extension
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify your extension ID
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
